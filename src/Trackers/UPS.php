@@ -25,7 +25,7 @@ class UPS extends AbstractTracker
     protected $descriptionLookup;
 
     /** @var string */
-    protected $language = 'de';
+    protected $language = 'en';
 
 
     protected function fetch($url)
@@ -177,6 +177,9 @@ class UPS extends AbstractTracker
     protected function getStatuses()
     {
         return [
+            Track::STATUS_INITIAL => [
+                'Shipper created a label, UPS has not received the package yet.',
+            ],
             Track::STATUS_PICKUP => [
                 'UPS Access Point™ possession',
                 'Beim UPS Access Point™',
