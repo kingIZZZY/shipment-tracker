@@ -10,6 +10,7 @@ class Track
     const STATUS_INITIAL = 'initial';
     const STATUS_PICKUP = 'pickup';
     const STATUS_IN_TRANSIT = 'in_transit';
+    const STATUS_DELIVERING = 'delivering';
     const STATUS_DELIVERED = 'delivered';
     const STATUS_WARNING = 'warning';
     const STATUS_EXCEPTION = 'exception';

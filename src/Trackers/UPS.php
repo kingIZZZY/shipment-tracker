@@ -191,8 +191,6 @@ class UPS extends AbstractTracker
                 'Wird zugestellt',
                 'Ready for UPS',
                 'Scan',
-                'Out For Delivery',
-                'Loaded on Delivery Vehicle',
                 'receiver requested a hold for a future delivery date',
                 'receiver was not available at the time of the first delivery attempt',
                 'war beim 1. Zustellversuch nicht anwesend',
@@ -213,6 +211,10 @@ class UPS extends AbstractTracker
                 'Wird heute zugestellt',
                 'Processing at UPS Facility',
                 'Bearbeitung in UPS Einrichtung',
+            ],
+            Track::STATUS_DELIVERING => [
+                'Out For Delivery',
+                'Loaded on Delivery Vehicle',
             ],
             Track::STATUS_WARNING => [
                 'attempting to obtain a new delivery address',
